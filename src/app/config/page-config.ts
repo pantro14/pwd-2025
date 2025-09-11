@@ -16,3 +16,13 @@ export type Sections = SectionToComponent extends Record<infer K, any> ? K : nev
 export type Components = SectionToComponent extends Record<any, infer V> ? V : never;
 
 export const sections = Object.keys(sectionToComponent) as Sections[];
+
+export const experience = [
+  'Senior Frontend Developer',
+  'Web application expert',
+  'Angular Expert',
+  'React Developer',
+  'Fullstack enthusiast',
+  'UX designer',
+  'Open Source Contributor',
+];
