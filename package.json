@@ -30,6 +30,7 @@
     "@angular/router": "^20.2.0",
     "@fortawesome/fontawesome-free": "^7.0.1",
     "@omnedia/ngx-starry-sky": "^3.0.3",
+    "@omnedia/ngx-timeline": "^3.0.0",
     "@omnedia/ngx-typewriter": "^3.1.1",
     "@omnedia/ngx-word-pullup": "^3.0.0",
     "@tailwindcss/postcss": "^4.1.13",

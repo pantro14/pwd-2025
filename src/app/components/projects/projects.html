@@ -1,1 +1,15 @@
-<p>projects works!</p>
+<div class="flex w-full flex-col gap-2 px-5 md:px-10 items-center justify-center relative">
+  <om-word-pullup
+    class="text-5xl font-bold mb-16"
+    [words]="'Projects'"
+    [wordDelay]="200"
+    [pullupSpeed]="'1s'"
+    [animateOnView]="true"
+  />
+</div>
+<om-timeline
+  [data]="timelineData"
+  [pathWidth]="'5px'"
+  [entryGap]="'5rem'"
+  [titleMaxWidth]="'15rem'"
+></om-timeline>
