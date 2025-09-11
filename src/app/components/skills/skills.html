@@ -1,1 +1,16 @@
-<p>skills works!</p>
+<div class="flex w-full flex-col gap-2 px-5 md:px-10 items-center justify-center relative">
+  <om-word-pullup
+    class="text-5xl font-bold mb-16"
+    [words]="'Skills'"
+    [wordDelay]="200"
+    [pullupSpeed]="'1s'"
+    [animateOnView]="true"
+  />
+  <div className="mt-4">
+    <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+      @for(skill of skills(); track skill.name) {
+      <app-skills-card [image]="skill.image" [name]="skill.name" [experience]="skill.level" />
+      }
+    </div>
+  </div>
+</div>

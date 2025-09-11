@@ -1,34 +1,32 @@
-<om-starry-sky>
+<div
+  class="flex w-full h-screen flex-col md:flex-row gap-5 px-5 md:px-10 items-center justify-center relative"
+>
   <div
-    class="flex w-full h-screen flex-col md:flex-row gap-5 px-5 md:px-10 items-center justify-center text-white relative"
+    class="border-2 border-teal-500 rounded-[50%] w-xs sm:w-lg md:w-xl lg:w-lg xl:w-xl 2xl:w-2xl"
   >
-    <div
-      class="border-2 border-teal-500 rounded-[50%] w-xs sm:w-lg md:w-xl lg:w-lg xl:w-xl 2xl:w-2xl"
-    >
-      <img src="profile.jpeg" alt="logo" class="w-full h-full rounded-[50%]" />
-    </div>
-    <div class="flex flex-col">
-      <h1 class="text-xl text-gray-400">Hello!, I am</h1>
-      <h1 class="text-2xl font-bold">David Pardo Corzo</h1>
-      <om-typewriter
-        [writeSpeed]="30"
-        [deleteDelay]="1000"
-        class="text-xl font-bold text-rose-300"
-        [words]="experience()"
-      ></om-typewriter>
-      <p class="text-md font-light text-gray-400">
-        Senior Front-End Developer and UX Designer with extensive experience in web application
-        development, cloud computing, and DevOps. Passionate about creating intuitive digital
-        experiences, learning the latest web standards, and expanding into full-stack development
-        while continuously advancing expertise in IT and software engineering.
-      </p>
-      <span class="font-link text-2xl font-bold">{{ pwd() }}</span>
-      <div class="flex flex-row items-center space-x-4 py-3 text-2xl">
-        <i class="fa-brands fa-square-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-solid fa-envelope"></i>
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
+    <img src="profile.jpeg" alt="logo" class="w-full h-full rounded-[50%]" />
+  </div>
+  <div class="flex flex-col">
+    <h1 class="text-xl text-gray-400">Hello!, I am</h1>
+    <h1 class="text-2xl font-bold">David Pardo Corzo</h1>
+    <om-typewriter
+      [writeSpeed]="30"
+      [deleteDelay]="1000"
+      class="text-xl font-bold text-rose-300"
+      [words]="experience()"
+    ></om-typewriter>
+    <p class="text-md font-light text-gray-400">
+      Senior Front-End Developer and UX Designer with extensive experience in web application
+      development, cloud computing, and DevOps. Passionate about creating intuitive digital
+      experiences, learning the latest web standards, and expanding into full-stack development
+      while continuously advancing expertise in IT and software engineering.
+    </p>
+    <span class="font-link text-2xl font-bold">{{ pwd() }}</span>
+    <div class="flex flex-row items-center space-x-4 py-3 text-2xl">
+      <i class="fa-brands fa-square-linkedin"></i>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-solid fa-envelope"></i>
+      <i class="fa-brands fa-whatsapp"></i>
     </div>
   </div>
-</om-starry-sky>
+</div>

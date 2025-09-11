@@ -31,6 +31,7 @@
     "@fortawesome/fontawesome-free": "^7.0.1",
     "@omnedia/ngx-starry-sky": "^3.0.3",
     "@omnedia/ngx-typewriter": "^3.1.1",
+    "@omnedia/ngx-word-pullup": "^3.0.0",
     "@tailwindcss/postcss": "^4.1.13",
     "postcss": "^8.5.6",
     "rxjs": "~7.8.0",

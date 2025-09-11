@@ -1,10 +1,10 @@
 import { NgComponentOutlet } from '@angular/common';
 import { Component, computed, signal } from '@angular/core';
+import { NgxStarrySkyComponent } from '@omnedia/ngx-starry-sky';
 import { sectionToComponent, SectionToComponent } from '../config/page-config';
-
 @Component({
   selector: 'app-main-container',
-  imports: [NgComponentOutlet],
+  imports: [NgxStarrySkyComponent, NgComponentOutlet],
   templateUrl: './main-container.html',
   styleUrl: './main-container.css',
 })
