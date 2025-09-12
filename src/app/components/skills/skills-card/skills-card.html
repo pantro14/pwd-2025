@@ -3,7 +3,7 @@
     <img class="mx-auto h-20 w-20" [src]="image()" alt="framework" />
     <div class="space-y-2">
       <div class="flex flex-col justify-center items-center">
-        <h1 className="font-bold">{{ name() }}</h1>
+        <om-word-pullup [animateOnView]="true" class="!text-xs" [words]="name()"></om-word-pullup>
         <p class="text-sm font-light text-gray-400">Experience: {{ experience() }} yrs.</p>
       </div>
     </div>

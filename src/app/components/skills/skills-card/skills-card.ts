@@ -1,8 +1,9 @@
 import { Component, input } from '@angular/core';
+import { NgxWordPullupComponent } from '@omnedia/ngx-word-pullup';
 
 @Component({
   selector: 'app-skills-card',
-  imports: [],
+  imports: [NgxWordPullupComponent],
   templateUrl: './skills-card.html',
   styleUrl: './skills-card.css',
 })
