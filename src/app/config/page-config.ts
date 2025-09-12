@@ -40,6 +40,8 @@ export const skills = [
   { name: 'Tailwindcss', image: 'skills/tailwindcss.svg', level: 5 },
   { name: 'Jest', image: 'skills/jest.svg', level: 5 },
   { name: 'GraphQL', image: 'skills/graphql.svg', level: 5 },
+  { name: 'Prisma', image: 'skills/prisma.svg', level: 2 },
+  { name: 'Mongodb', image: 'skills/mongo.svg', level: 2 },
   { name: 'Figma', image: 'skills/figma.svg', level: 2 },
   { name: 'Git', image: 'skills/git.svg', level: 9 },
   { name: 'GitHub', image: 'skills/github.svg', level: 9 },
