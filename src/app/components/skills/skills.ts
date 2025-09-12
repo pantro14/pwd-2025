@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { NgxWordPullupComponent } from '@omnedia/ngx-word-pullup';
-import { skills } from '../../config/page-config';
+import { Skill, skills } from '../../config/page-config';
 import { SkillsCard } from './skills-card/skills-card';
 
 @Component({
@@ -10,5 +10,5 @@ import { SkillsCard } from './skills-card/skills-card';
   styleUrl: './skills.css',
 })
 export class Skills {
-  protected readonly skills = signal([...skills]);
+  protected readonly skills = signal<Skill[]>([...skills]);
 }

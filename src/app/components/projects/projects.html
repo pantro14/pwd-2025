@@ -6,10 +6,11 @@
     [pullupSpeed]="'1s'"
     [animateOnView]="true"
   />
+  <om-timeline
+    [data]="projectsTimeline()"
+    [pathWidth]="'5px'"
+    [entryGap]="'10rem'"
+    [titleMaxWidth]="'15rem'"
+    class="w-[50%]"
+  ></om-timeline>
 </div>
-<om-timeline
-  [data]="timelineData"
-  [pathWidth]="'5px'"
-  [entryGap]="'5rem'"
-  [titleMaxWidth]="'15rem'"
-></om-timeline>
