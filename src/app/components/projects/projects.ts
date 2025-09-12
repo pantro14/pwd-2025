@@ -21,7 +21,7 @@ export class Projects {
       content: `<div class="flex flex-col py-3 space-y-2">
   <div class="flex-1">
     <div class="flex items-center space-x-2">
-      <a class="font-bold md:text-xl underline" href="${project.link}">
+      <a class="font-bold md:text-xl underline" target="_blank" href="${project.link}">
         ${project.name}
       </a>
       ${project.countries
