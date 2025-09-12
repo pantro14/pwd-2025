@@ -7,7 +7,7 @@
     [animateOnView]="true"
   />
   <div className="mt-4">
-    <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-5">
       @for(skill of skills(); track skill.name) {
       <app-skills-card [image]="skill.image" [name]="skill.name" [experience]="skill.level" />
       }

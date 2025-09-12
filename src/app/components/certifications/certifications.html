@@ -1,1 +1,21 @@
-<p>certifications works!</p>
+<div class="flex w-full flex-col gap-2 px-5 pb-10 md:px-10 items-center justify-center relative">
+  <om-word-pullup
+    class="text-5xl font-bold mb-16"
+    [words]="'Certifications'"
+    [wordDelay]="200"
+    [pullupSpeed]="'1s'"
+    [animateOnView]="true"
+  />
+  <div
+    class="flex flex-col border-1 border-gray-600 bg-primary rounded-lg my-6 w-[80%] sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[40%]"
+  >
+    <div class="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center">
+      <img class="w-full h-full object-cover" src="certs/az-900.png" alt="azure-cert" />
+    </div>
+    <div class="p-6 text-center">
+      <h4 class="mb-1 text-xl font-bold">Azure 900 Fundamentals</h4>
+      <p class="text-sm text-rose-300 uppercase">Issues by Microsoft</p>
+      <p class="text-sm font-light text-gray-400 mt-4">November 2022</p>
+    </div>
+  </div>
+</div>

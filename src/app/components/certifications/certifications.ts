@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { NgxWordPullupComponent } from '@omnedia/ngx-word-pullup';
 
 @Component({
   selector: 'app-certifications',
-  imports: [],
+  imports: [NgxWordPullupComponent],
   templateUrl: './certifications.html',
-  styleUrl: './certifications.css'
+  styleUrl: './certifications.css',
 })
-export class Certifications {
-
-}
+export class Certifications {}
