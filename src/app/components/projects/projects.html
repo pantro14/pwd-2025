@@ -27,7 +27,8 @@
               <a class="font-bold md:text-xl underline" target="_blank" [href]="project.link">
                 {{ project.name }}
               </a>
-              @for(country of project.countries; track country){
+              @for(country of project.countries; track country)
+              {
               <img [src]="'projects/' + country + '.svg'" class="w-6 h-6" />
               }
             </div>
