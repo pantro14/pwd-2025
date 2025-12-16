@@ -28,7 +28,7 @@
                 {{ project.name }}
               </a>
               @for(country of project.countries; track country){
-              <img [src]="`projects/${country}.svg`" class="w-6 h-6" />
+              <img [src]="'projects/' + country + '.svg'" class="w-6 h-6" />
               }
             </div>
           </div>
