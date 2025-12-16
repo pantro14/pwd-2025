@@ -7,10 +7,37 @@
     [animateOnView]="true"
   />
   <om-timeline
-    [data]="projectsTimeline()"
     [pathWidth]="'5px'"
     [entryGap]="'5rem'"
     [titleMaxWidth]="'15rem'"
     class="w-full sm:w-[70%] xl:w-[60%]"
-  ></om-timeline>
+  >
+    @for(project of projects(); track project.name) {
+    <om-timeline-entry>
+      <ng-template #timelineTitle>
+        <div class="flex flex-row items-center space-x-4 py-3">
+          <p class="text-3xl">{{ project.year }}</p>
+          <img [src]="project.image" class="w-30 h-30" />
+        </div>
+      </ng-template>
+      <ng-template #timelineContent>
+        <div class="flex flex-col py-3 space-y-2">
+          <div class="flex-1">
+            <div class="flex items-center space-x-2">
+              <a class="font-bold md:text-xl underline" target="_blank" [href]="project.link">
+                {{ project.name }}
+              </a>
+              @for(country of project.countries; track country){
+              <img [src]="`projects/${country}.svg`" class="w-6 h-6" />
+              }
+            </div>
+          </div>
+
+          <p class="font-light md:text-lg text-rose-300">{{ project.position }}</p>
+          <p class="font-light text-gray-400 text-justify">{{ project.description }}</p>
+        </div>
+      </ng-template>
+    </om-timeline-entry>
+    }
+  </om-timeline>
 </div>
