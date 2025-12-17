@@ -11,10 +11,4 @@ import { Project, projects } from '../../config/page-config';
 })
 export class Projects {
   protected readonly projects = signal<Project[]>([...projects]);
-
-  constructor() {
-    afterNextRender(() => {
-      console.log('Projects component rendered');
-    });
-  }
 }
