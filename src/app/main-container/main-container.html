@@ -1,10 +1,26 @@
-<om-starry-sky>
-  <div class="flex">
-    <div class="m-auto">
-      @for(componentEntry of componentEntries(); track componentEntry[0]) { @let component =
-      componentEntry[1];
-      <ng-container *ngComponentOutlet="component"></ng-container>
+<div class="flex bg-black">
+  <div class="m-auto">
+    <app-home />
+    <div id="skills">
+      @defer(on viewport) {
+      <app-skills />
+      } @placeholder {
+      <div>Placeholder</div>
+      }
+    </div>
+    <div id="projects">
+      @defer(on viewport) {
+      <app-projects />
+      } @placeholder {
+      <div>Placeholder</div>
+      }
+    </div>
+    <div id="certifications">
+      @defer(on viewport) {
+      <app-certifications />
+      } @placeholder {
+      <div>Placeholder</div>
       }
     </div>
   </div>
-</om-starry-sky>
+</div>
