@@ -1,27 +1,27 @@
-<header class="bg-primary sticky top-0 z-50 px-3 py-0 shadow-md">
-  <div class="flex justify-between items-center">
-    <img
-      src="pwd-white.png"
-      [routerLink]="['/']"
-      class="h-5 rounded-full cursor-pointer"
-      alt="logo"
-    />
-    <ul class="hidden md:flex">
-      @for(section of sections(); track section) {
-      <li class="p-4">
-        <a [routerLink]="[]" [fragment]="section" class="hover:underline">
-          {{ section | title }}
-        </a>
-      </li>
-      }
-    </ul>
-    <a
-      href="cv.pdf"
-      rel="noreferrer"
-      target="_blank"
-      class="bg-rose-500 rounded-full px-4 py-1 border-rose-800 border-4"
-    >
-      Download CV
-    </a>
-  </div>
+<header role="banner" class="bg-primary sticky top-0 z-50 px-3 py-0 shadow-md">
+  <nav class="nav-container" aria-label="Main navigation">
+    <div class="flex justify-between items-center">
+      <a routerLink="/" aria-label="Go to homepage">
+        <img src="pwd-white.webp" alt="Site logo" class="h-5 rounded-full cursor-pointer" />
+      </a>
+      <ul id="main-menu" class="hidden md:flex">
+        @for(section of sections(); track section) {
+        <li class="p-4">
+          <a [routerLink]="[]" [fragment]="section" class="hover:underline">
+            {{ section | title }}
+          </a>
+        </li>
+        }
+      </ul>
+      <a
+        href="cv.pdf"
+        rel="noreferrer noopener"
+        target="_blank"
+        aria-label="Download CV"
+        class="bg-rose-600 text-white rounded-full px-4 py-1 border-rose-800 border-4"
+      >
+        Download CV
+      </a>
+    </div>
+  </nav>
 </header>

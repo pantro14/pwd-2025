@@ -1,6 +1,6 @@
 <div class="w-50 md:w-60 py-6 text-center border-1 border-gray-600 bg-primary rounded-lg">
   <div class="space-y-2 xl:space-y-4">
-    <img class="mx-auto h-20 w-20" [src]="image()" alt="framework" />
+    <img class="mx-auto h-20 w-20" [src]="image()" [alt]="name()" />
     <div class="space-y-2">
       <div class="flex flex-col justify-center items-center">
         <om-word-pullup [animateOnView]="true" class="!text-xs" [words]="name()"></om-word-pullup>

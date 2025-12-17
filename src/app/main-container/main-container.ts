@@ -1,14 +1,12 @@
-import { NgComponentOutlet } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
-import { NgxStarrySkyComponent } from '@omnedia/ngx-starry-sky';
-import { sectionToComponent, SectionToComponent } from '../config/page-config';
+import { Component } from '@angular/core';
+import { Certifications } from '../components/certifications/certifications';
+import { Home } from '../components/home/home';
+import { Projects } from '../components/projects/projects';
+import { Skills } from '../components/skills/skills';
 @Component({
   selector: 'app-main-container',
-  imports: [NgxStarrySkyComponent, NgComponentOutlet],
+  imports: [Home, Skills, Projects, Certifications],
   templateUrl: './main-container.html',
   styleUrl: './main-container.css',
 })
-export class MainContainer {
-  protected readonly sectionToComponent = signal<SectionToComponent>(sectionToComponent);
-  protected readonly componentEntries = computed(() => Object.entries(this.sectionToComponent()));
-}
+export class MainContainer {}

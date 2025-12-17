@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { afterNextRender, Component, signal } from '@angular/core';
 import { NgxTimelineComponent, NgxTimelineEntryComponent } from '@omnedia/ngx-timeline';
 import { NgxWordPullupComponent } from '@omnedia/ngx-word-pullup';
 import { Project, projects } from '../../config/page-config';

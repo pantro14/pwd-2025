@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { afterNextRender, Component, signal } from '@angular/core';
 import { NgxWordPullupComponent } from '@omnedia/ngx-word-pullup';
 import { Skill, skills } from '../../config/page-config';
 import { SkillsCard } from './skills-card/skills-card';
