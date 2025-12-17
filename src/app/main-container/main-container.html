@@ -1,11 +1,9 @@
 <om-starry-sky>
   <div class="flex">
     <div class="m-auto">
-      @for(componentEntry of componentEntries(); track componentEntry[0]) { @let key =
-      componentEntry[0]; @let component = componentEntry[1];
-      <div [id]="key" class="pt-20 sm:py-0">
-        <ng-container *ngComponentOutlet="component"></ng-container>
-      </div>
+      @for(componentEntry of componentEntries(); track componentEntry[0]) { @let component =
+      componentEntry[1];
+      <ng-container *ngComponentOutlet="component"></ng-container>
       }
     </div>
   </div>
