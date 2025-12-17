@@ -2,11 +2,11 @@
   class="flex w-full h-screen flex-col md:flex-row gap-5 px-5 md:px-10 2xl:px-50 items-center justify-center relative"
 >
   <div
-    class="border-2 border-teal-500 rounded-[50%] h-xs sm:h-lg md:h-xl lg:h-lg xl:h-xl 2xl:h-2xl"
+    class="border-2 border-teal-500 rounded-[50%] h-48 sm:h-64 md:h-80 lg:h-72 xl:h-80 2xl:h-96 aspect-square relative"
   >
-    <img src="profile.webp" alt="profile-photo" class="w-full h-full rounded-[50%]" />
+    <img ngSrc="profile.webp" alt="David Pardo Corzo" class="rounded-[50%]" fill priority />
   </div>
-  <div class="flex flex-col">
+  <div class="flex flex-col flex-1">
     <h1 class="text-xl 2xl:text-4xl text-gray-400">Hello!, I am</h1>
     <h1 class="text-2xl 2xl:text-5xl font-bold">David Pardo Corzo</h1>
     <om-typewriter
@@ -23,14 +23,21 @@
     </p>
     <span class="font-link text-2xl 2xl:text-5xl font-bold">{{ pwd() }}</span>
     <div class="flex flex-row items-center space-x-4 py-3 text-2xl">
-      <a href="https://www.linkedin.com/in/david-julian-pardo/" target="_blank"
+      <a
+        href="https://www.linkedin.com/in/david-julian-pardo/"
+        target="_blank"
+        aria-label="LinkedIn Profile"
         ><i class="fa-brands fa-square-linkedin"></i
       ></a>
-      <a href="https://github.com/pantro14" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="mailto:info@pardowebdeveloper.com" target="_blank"
+      <a href="https://github.com/pantro14" target="_blank" aria-label="GitHub Profile"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+      <a href="mailto:info@pardowebdeveloper.com" target="_blank" aria-label="Send Email"
         ><i class="fa-solid fa-envelope"></i
       ></a>
-      <a href="https://wa.me/31625083501" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://wa.me/31625083501" target="_blank" aria-label="Contact on WhatsApp"
+        ><i class="fa-brands fa-whatsapp"></i
+      ></a>
     </div>
   </div>
 </div>

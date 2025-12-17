@@ -1,10 +1,11 @@
+import { NgOptimizedImage } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { NgxTypewriterComponent } from '@omnedia/ngx-typewriter';
 import { experience } from '../../config/page-config';
 
 @Component({
   selector: 'app-home',
-  imports: [NgxTypewriterComponent],
+  imports: [NgxTypewriterComponent, NgOptimizedImage],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
